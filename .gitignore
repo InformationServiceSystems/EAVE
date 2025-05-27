@@ -6,10 +6,10 @@
 *.DS_Store*
 
 # ignore saved models
-*.pth
-*.pt
+# *.pth
+# *.pt
 # eave-api/api/*.pkl
 eave-api/api/*.zip
-*.pickle
-*.pk
+# *.pickle
+# *.pk
 
