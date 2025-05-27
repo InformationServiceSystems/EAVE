@@ -7,10 +7,9 @@
 
 # ignore saved models
 *.pth
+*.pt
 eave-api/api/*.pkl
 eave-api/api/*.zip
+*.pickle
+*.pk
 
-# ignore dataset files
-AI-Minimization/Pruning_Approach/data/*
-AI-Minimization/data/DOES/*
-data/*
