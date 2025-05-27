@@ -1,6 +1,6 @@
 # EAVE ― Energy Analytics for Cost-effective and Sustainable Operations
 
-![EAVE](escade.jpg)
+<div align="center">![EAVE](escade.jpg)</div>
 
 ## Introduction
 
