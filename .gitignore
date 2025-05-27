@@ -1,1 +1,16 @@
+# ignore pycache
+*__pychache__*
+*.pyc
+
 .DS_Store
+*.DS_Store*
+
+# ignore saved models
+*.pth
+eave-api/api/*.pkl
+eave-api/api/*.zip
+
+# ignore dataset files
+AI-Minimization/Pruning_Approach/data/*
+AI-Minimization/data/DOES/*
+data/*
