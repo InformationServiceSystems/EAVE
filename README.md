@@ -1,5 +1,7 @@
 # EAVE ― Energy Analytics for Cost-effective and Sustainable Operations
 
+![EAVE](escade.jpg)
+
 ## Introduction
 
 Large-scale AI deployments come with a hidden price tag: **energy bills and carbon emissions can rise as fast as model accuracy**.  
