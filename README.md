@@ -1,19 +1,20 @@
 # EAVE ― Energy Analytics for Cost-effective and Sustainable Operations
 
 ## Introduction
-**EAVE** is an multi-layer optimisation framework that helps decision makers and AI practitioners analyse and reduce the **energy, cost, and carbon footprint** of machine-learning workloads.  
-The tool unifies three modules:
 
-* **Measure** – energy, costs, and CO2-emmisions accounting,
-* **Predict** – CausalBNN–based spatio-temporal deployment recommendations, and  
-* **Optimize** – model-level compression (knowledge-distillation, post-training quantisation, offline NAS) with Pareto frontier visualisation.
+Large-scale AI deployments come with a hidden price tag: **energy bills and carbon emissions can rise as fast as model accuracy**.  
+Most “green-AI” efforts address the problem piecemeal—some prune models, others juggle GPU schedules, or shift workloads to cooler locations.  
+**EAVE** (Energy Analytics for cost-effective and sustainable operations) unifies those fragments in one tool.
 
-Under the hood, EAVE uses
+EAVE is an **open-source, multi-layer optimisation framework** that:
 
-* a **FastAPI** back-end (Python 3.9),  
-* a **React** single-page front-end, and   
+* **Profiles tasks** to pinpoint where compute time and energy are spent.  
+* Performs **model-level compression** (knowledge distillation, quantisation, offline NAS).  
+* Matches workloads with optimal **hardware configurations**.  
+* Chooses the best **time & place** to run them, guided by causal-inference insights and regional PUE data.
 
-The reference dataset is derived from **MLPerf Inference** runs and enriched with location-specific energy-mix and environmental data. The complete system is described in our demo paper “AI Without Excess: Multi-Layer Optimisation for Cost-effective and Sustainable Operations” \[ref\].
+By combining PUE-based energy modelling, BayesianNN prediction, and a custom Pareto optimiser, EAVE makes every recommendation **cost-aware, performance-aware, and carbon-aware**.  
+Evaluations on MLPerf workloads show that EAVE helps data-centre operators and ML engineers discover deployment strategies that are simultaneously **cheaper and greener—without sacrificing accuracy**.
 
 ---
 
