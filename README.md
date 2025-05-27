@@ -87,14 +87,15 @@ Open your browser and go to: [http://localhost:5173](http://localhost:5173)
 
 
 # Project Structure
-
+```
 EAVE-dashboard/
-├── eave-api/          # FastAPI back-end
+├── eave-api/                  # FastAPI back-end
 │   ├── app/
-│   │   ├── measure/   # energy + causal analysis
-│   │   ├── predict/   # Random-Forest inference
-│   │   └── optimize/  # compression + Pareto
-|   └── data/          # benchmark input
-│   └── requirements.txt    # for backend API dependencies
-└── eave-ui/           # React front-end
-
+│   │   ├── main.py            # entry point for SPA
+│   │   │   ├── measure/           # energy + causal analysis
+│   │   │   ├── predict/           # CausalBNN inference
+│   │   │   └── optimize/          # compression + Pareto
+│   ├── data/                  # benchmark input
+│   └── requirements.txt       # back-end dependencies
+└── eave-ui/                   # React front-end
+```
