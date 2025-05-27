@@ -1,0 +1,10 @@
+model_name,compressionTech,tdp_proc,no_of_processors,tdp_acc,num_accelerator,throughput,num_nodes,performance,params
+PreActResNet18,original,350,1,700,1,207.67,1,64.92,11177800
+PreActResNet18,Neural Architecture Search,350,1,700,1,328.5,1,78.22,1288506
+ViT,original,135,1,300,1,83.17,1,84.5,85805577
+ViT,Knowledge Distillation,135,1,300,1,110.84,1,80.8,5528274
+ViT (CPU only),original,15,1,0,1,1.9,1,86.0,85805577
+ViT (CPU only),Dynamic Quantization,15,1,0,1,2.85,1,84.88,85805577
+ViT (CPU only),Knowledge Distillation,15,1,0,1,13.86,1,84.0,5528274
+Llama-3.3-70B-Instruct,original,700,1,500,1,13.66,1,82.0,70000000000
+Llama-3.3-70B-Instruct,Knowledge Distillation,700,1,500,1,22.07,1,71.34,8000000000
