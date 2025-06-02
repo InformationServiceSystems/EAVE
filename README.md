@@ -4,23 +4,13 @@
 
 ## Introduction
 
-Deploying AI models at scale often leads to high energy consumption and increased carbon emissions. As model accuracy improves, the environmental and financial costs can rise just as quickly.
+Deploying AI models at scale brings real-world costs—especially in terms of energy use and environmental impact. While there are many efforts to make machine learning more efficient, most of them focus on just one layer of the stack: optimizing a model, tweaking the hardware, or shifting workloads to different locations. These isolated fixes often miss the bigger picture.
 
-Most current efforts to reduce these costs are fragmented—some focus on compressing models, others on rescheduling jobs, or relocating workloads to regions with better cooling or lower carbon intensity. However, these isolated solutions miss the opportunity for more integrated, system-level optimization.
+**EAVE** (Energy Analytics for Cost-effective and Sustainable Operations) is an open-source framework designed to bring those pieces together. It supports multi-layer optimization across tasks, models, hardware configurations, and deployment strategies. EAVE helps practitioners explore trade-offs between cost, performance, and carbon impact—and make informed decisions at each step.
 
-**EAVE** (Energy Analytics for Cost-effective and Sustainable Operations) is an **open-source, multi-layer optimization framework** that brings these pieces together into one unified tool.
+The framework combines task profiling, model compression techniques (like distillation and quantization), hardware-aware planning, and spatial-temporal deployment analysis. It uses a mix of causal inference, Bayesian modeling, and PUE-based energy analytics to recommend more sustainable and cost-effective AI deployment strategies.
 
-EAVE includes:
-
-* **Task-level profiling** to find where time and energy are being used most.  
-* **Model-level optimization** using techniques such as knowledge distillation, quantization, and offline neural architecture search (NAS).  
-* **Hardware configuration matching** to choose the most energy-efficient setup.  
-* **Spatiotemporal deployment analysis** to decide the best time and place to run workloads, using causal inference and regional PUE data.
-
-By combining energy modeling based on Power Usage Effectiveness (PUE), Bayesian performance prediction, and custom Pareto optimization, EAVE produces recommendations that are **cost-efficient, performance-aware, and carbon-conscious**.
-
-Evaluations on MLPerf workloads show that EAVE helps both data center operators and AI practitioners discover deployment strategies that are **cheaper, more sustainable, and maintain model accuracy**.
-**cheaper and greener—without sacrificing accuracy**.
+Evaluated on MLPerf workloads, EAVE provides actionable insights for both machine learning engineers and data center operators—without sacrificing model accuracy.
 
 ---
 
