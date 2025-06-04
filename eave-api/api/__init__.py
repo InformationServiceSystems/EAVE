@@ -2,7 +2,7 @@ from .energy import calculate_energy_values
 from .environment import get_env_data
 from .mappings import *
 from .model import get_PUE_prediction
-
+from .casual_model import CausalBNN
 
 import numpy as np
 import random
