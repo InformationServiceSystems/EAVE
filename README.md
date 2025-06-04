@@ -12,6 +12,29 @@ The framework combines task profiling, model compression techniques (like distil
 
 Evaluated on MLPerf workloads, EAVE provides actionable insights for both machine learning engineers and data center operators—without sacrificing model accuracy.
 
+## Results
+
+EAVE was evaluated for its predictive accuracy, causal reasoning capabilities, and multi-objective optimization performance.
+
+### Predictive Performance
+
+Using a Bayesian Neural Network (BNN), EAVE predicts energy metrics with high reliability. On a held-out test set, BNN outperforms classical baselines in MAE, MSE, RMSE, and R². Posterior predictive checks (below) further validate the model’s adequacy, showing strong alignment between simulated and observed distributions.
+
+![Posterior Predictive Check](figures/posterior_predictive_check.png)
+
+### Causal Inference
+
+EAVE estimates Average Treatment Effects (ATE) with Bayesian uncertainty over key energy drivers. Results show that IT energy, cooling energy, and PUE are more sensitive to infrastructure and facility-level attributes (e.g., total energy, weather, cooling systems) than to model or hardware configurations. Placebo tests confirm the robustness of these inferences.
+
+![ATE Estimates](figures/ate_estimates.png)
+
+### Optimization Trade-offs
+
+By leveraging multi-objective optimization, EAVE identifies Pareto-optimal configurations balancing performance, cost, and carbon footprint. For instance, compressing the LLaMA 3.3 70B model to 8B via distillation reduced energy and CO₂ by 37.23% with only a 14.34% drop in accuracy.
+
+![Pareto Front](figures/pareto_front.png)
+
+
 ---
 
 # Installation Guide
